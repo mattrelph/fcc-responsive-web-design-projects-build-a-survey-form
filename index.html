@@ -1,0 +1,96 @@
+<div id="main" class="container">
+  <h1 id="title" class="h1 text-center">Small Survey Form</h1>
+  <p id="description" class="text-center h4"> Please tell us a little about yourself.</p>  
+<form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com" >
+  <div id="nameRow" class="form-group row">
+    <label id="name-label" class="col-sm-2 col-form-label" for="name">* Name:</label>
+    <div class="col-sm-10">
+      <input type="text" name="name" id="name" class="form-control" placeholder="First Last" required />
+    </div>
+  </div> <!--End Name Row-->
+  <div id="emailRow" class="form-group row">
+      <label class="col-sm-2 col-form-label"  id="email-label" for="email">* eMail:</label>
+    <div class="col-sm-10">
+      <input type="email" name="email" id="email" class="form-control" required placeholder="myEmail@domain.com" required />
+    </div>
+  </div> <!--End email Row-->
+  <div id="numberRow" class="form-group row">
+      <label class="col-sm-2 col-form-label"  id="number-label" for="number">* Favorite Number between 1 and 10:</label>
+    <div class="col-sm-10">
+      <input type="number" name="favNumber" id="number" class="form-control" min="1" max="10" placeholder="1-10" required />
+    </div>
+  </div> <!--End number Row-->  
+  <div id="dropdownRow" class="form-group row">
+      <label class="col-sm-2 col-form-label"   id="dropdown-label" for="dropdown">* Favorite Color:</label>
+    <div class="col-sm-10">
+       <select id="dropdown" name="favColor" class="form-control">
+      <option disabled value>Select an option</option>
+      <option  value="red">Red</option>
+      <option value="orange">Orange</option>
+      <option value="yellow">Yellow</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+      <option value="indigo">Indigo</option>
+      <option value="violet">Violet</option>
+    </select>
+    </div>
+  </div> <!--End dropdown Row-->  
+  <fieldset id="radio" class="form-group row">
+    <legend class="text-sm">Left or Right Handed?</legend>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input form-check-inline" name="optionsRadios" id="optionsRadios1" value="option1" checked/> Left Handed
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input form-check-inline" name="optionsRadios" id="optionsRadios2" value="option2"/>
+        Right Handed
+      </label>
+    </div>
+    <div class="form-check disabled">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3"/>
+        Ambidextrous
+      </label>
+    </div>
+  </fieldset> <!--End radio buttons-->  
+  
+  <div id="checks"  class="form-group row">
+    <div class="form-check">
+      <legend class="text-sm"> Super Powers?</legend>
+      <label class="form-check-label form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"/> Flight
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"/> Super Speed
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"/> Super Strength
+      </label>
+    </div>
+      <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option4"/> Telekenesis
+      </label>
+    </div>
+  </div><!--End check boxes--> 
+  
+   <div class="form-group row">
+    <label for="textArea">Anything else we need to know?</label>
+    <textarea class="form-control" id="textArea" rows="3"></textarea>
+  </div>	<!--End text area--> 
+  
+  <div class="form-group row">
+      <div class="offset-sm-2 col-sm-10">
+        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+      </div>
+	</div> <!--End submit button--> 
+  </form>
+</div> <!-- End #main-->
+
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
